@@ -5,10 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./laptop.css" media="(min-width:700px)" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Kazoku Coffe</title>
   </head>
   <body>
     <header class="header">
+      <h3><a href="#">Kazoku Cafe</a></h3>
+      <input type="checkbox" id="menu-check" />
+      <label id="menu" for="menu-check">
+        <span class="menu-open">&#9776;</span>
+        <span class="menu-close">X</span>
+      </label>
       <nav class="header-navigation">
         <ul class="navigation-list">
           <li><a href="">Menu</a></li>
@@ -19,20 +33,36 @@
       </nav>
     </header>
     <main class="content-main">
+      <div class="section-left">HOla</div>
       <div class="content-main__image">
-        <h2>Kazoku</h2>
-        <p>Cafe tostado, fuente vertical enviado directamente a tu hogar</p>
+        <div>
+          <h2>Kazoku</h2>
+          <p>Cafe tostado, fuente vertical enviado directamente a tu hogar</p>
+          <h3 class="button-whatsapp-movil">
+            <a href="google.com">
+              Haz tu pedido <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </h3>
+        </div>
       </div>
     </main>
-    <div>
-      <img src="assets/28bcaf83ac63af6cc17dcf1552c9b7b3.jpg" alt="" srcset="" />
-      <img src="assets/28bcaf83ac63af6cc17dcf1552c9b7b3.jpg" alt="" srcset="" />
-      <img src="assets/28bcaf83ac63af6cc17dcf1552c9b7b3.jpg" alt="" srcset="" />
-      <img src="assets/28bcaf83ac63af6cc17dcf1552c9b7b3.jpg" alt="" srcset="" />
-      <img src="assets/28bcaf83ac63af6cc17dcf1552c9b7b3.jpg" alt="" srcset="" />
-      <img src="assets/28bcaf83ac63af6cc17dcf1552c9b7b3.jpg" alt="" srcset="" />
-      <img src="assets/28bcaf83ac63af6cc17dcf1552c9b7b3.jpg" alt="" srcset="" />
-      <img src="assets/28bcaf83ac63af6cc17dcf1552c9b7b3.jpg" alt="" srcset="" />
+    <div class="content-about-me">
+      <p class="text-resume">Mucho mas que una cafeterias</p>
+      <h1 class="text-brand">WE have a brew for every time of day</h1>
+      <p class="text-explain">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+        praesentium odit sapiente accusantium, sint, ullam harum quisquam
+        aliquam aspernatur iste placeat quibusdam eos accusamus deserunt
+        corporis odio est, reprehenderit inventore.
+      </p>
     </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
