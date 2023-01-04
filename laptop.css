@@ -56,6 +56,7 @@
 .navigation-list li a:hover::after {
   animation: borderAnimated 800ms;
   transform-origin: right;
+  width: 106%;
 }
 @keyframes borderAnimated {
   0% {
@@ -75,34 +76,45 @@
   height: 100vh;
 }
 .content-main .section-left {
+  display: none;
+}
+.content-main .section-left img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  z-index: 1;
+  overflow-x: visible;
+}
+.content-main .section-left-animated {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   overflow: hidden;
 
-  width: 65%;
-  background-image: url("assets/IMG_20221121_180931.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  animation: slideIn 2.5s ease;
+  width: 60%;
+  -webkit-animation: slideIn 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slideIn 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slideIn {
+  0% {
+    animation-timing-function: ease-in-out;
+    width: 0%;
+  }
+
+  100% {
+    animation-timing-function: ease-in-out;
+
+    width: 60%;
+  }
 }
 .content-main .section-left:hover {
   overflow: hidden;
   transform: scale(1.1);
   transition: 1s ease-in;
-}
-@keyframes slideIn {
-  0% {
-    width: 0%;
-  }
-  50% {
-    width: 80%;
-  }
-  100% {
-    width: 65%;
-  }
 }
 
 .content-main .section-left h3 {
@@ -110,7 +122,7 @@
   text-align: center;
   font-weight: 700;
   width: 250px;
-
+  z-index: 10;
   color: #ff7f24;
   font-family: "Hind Madurai", sans-serif;
 }
@@ -121,6 +133,7 @@
 
   font-family: "Hind Madurai", sans-serif;
   color: #dddddd;
+  z-index: 10;
 }
 .content-main .section-left a {
   font-size: 1.5rem;
@@ -132,6 +145,7 @@
   border-radius: 6px;
   background-color: #ae4800;
   font-family: "Hind Madurai", sans-serif;
+  z-index: 10;
 }
 .content-main .section-left a:hover {
   transform: scale(1.1);

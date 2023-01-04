@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="./laptop.css" media="(min-width:700px)" />
+    <link rel="stylesheet" href="./laptop.css" media="(min-width:800px)" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="node_modules/@splidejs/splide/dist/css/splide.min.css"
+    />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;500;600;700&family=Rammetto+One&display=swap"
       rel="stylesheet"
@@ -16,8 +21,13 @@
   </head>
   <body>
     <header class="header">
-      <a href="#"><img src="assets/PhotoRoom-20220816_202153.png
-        " alt="" srcset=""></a>
+      <a href="#"
+        ><img
+          src="assets/PhotoRoom-20220816_202153.png
+        "
+          alt=""
+          srcset=""
+      /></a>
       <input type="checkbox" id="menu-check" />
       <label id="menu" for="menu-check">
         <span class="menu-open">&#9776;</span>
@@ -34,26 +44,30 @@
     </header>
     <main class="content-main">
       <div class="section-left">
-          <h3>Never run out of coffee again.</h3>
-          <p>Your favorite coffe delivered on your sheduñe</p>
-          <a href="google">Start my Subscription</a>
-          <p>Your favorite coffe delivered on your sheduñe</p>
-        </div>
+        <img src="./assets/IMG_20221121_180931.jpg" alt="" />
+        <h3>Never run out of coffee again.</h3>
+        <p>Your favorite coffe delivered on your sheduñe</p>
+        <a href="google">Hacer mi pedido</a>
+        <p>Your favorite coffe delivered on your sheduñe</p>
       </div>
       <div class="content-main__image">
         <div>
           <h2>Kazoku</h2>
           <p>Cafe tostado, fuente vertical enviado directamente a tu hogar</p>
-          <h3 class="button-whatsapp-movil">
-            <a href="google.com">
-              Haz tu pedido <ion-icon name="logo-whatsapp"></ion-icon>
-            </a>
-          </h3>
         </div>
       </div>
     </main>
     <div class="content-about-me">
-      <p class="text-resume">Mucho mas que una cafeterias</p>
+      <h1 class="title">Cafeteria especializada</h1>
+      <div class="images-collection">
+        <img src="assets/IMG_20221121_170301.jpg" alt="" />
+        <img src="assets/IMG_20221121_180931.jpg" alt="" />
+        <img src="assets/IMG_20221121_180834.jpg" alt="" />
+        <img src="assets/IMG_20221121_180830.jpg" alt="" />
+        <img src="assets/IMG_20221121_180842.jpg" alt="" />
+        <img src="assets/yamamoto.jpg" alt="" />
+      </div>
+
       <h1 class="text-brand">WE have a brew for every time of day</h1>
       <p class="text-explain">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
@@ -62,6 +76,7 @@
         corporis odio est, reprehenderit inventore.
       </p>
     </div>
+    <script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -70,5 +85,18 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
+    <script>
+      const sectionLeft = document.querySelector(".content-main .section-left");
+      setTimeout(() => {
+        sectionLeft.classList.add("section-left-animated");
+      }, 1000);
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var splide = new Splide(".splide");
+        splide.mount();
+      });
+    </script>
   </body>
 </html>
