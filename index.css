@@ -151,18 +151,35 @@ body {
   box-shadow: inset 0px -150px 700px 8px rgba(0, 0, 0, 0.459);
   border: 0;
 }
-.content-main__image h2 {
+.content-main__image div h2 {
   font-size: 2.4rem;
   height: 40px;
 }
-.content-main__image p {
+.content-main__image div p {
   width: 70%;
   height: 90px;
-  font-family: "Rammetto One", cursive;
+  font-family: "", cursive;
   font-size: 1.6rem;
   font-weight: 600;
   opacity: 1;
   color: white;
+}
+.content-main__image div .button-mobile {
+  position: absolute;
+  bottom: -24px;
+  padding: 24px;
+  border-radius: 20px;
+  background-color: #ff7f24;
+  border: 0;
+}
+.content-main__image div .button-mobile:hover {
+  transform: scale(1.1);
+  transition: 400ms ease-in-out;
+}
+.button-mobile a {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 .content-about-me {

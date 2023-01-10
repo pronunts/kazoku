@@ -156,6 +156,9 @@
 .content-main .content-main__image {
   height: 100vh;
 }
+.content-main__image div .button-mobile {
+  display: none;
+}
 .content-about-me {
   position: relative;
   flex-direction: row;
