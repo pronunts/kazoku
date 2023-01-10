@@ -22,16 +22,19 @@
   display: block;
 }
 .header .header-navigation {
-  height: auto;
+  height: 120px;
   top: 0;
-  display: block;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   opacity: 1;
 }
 .navigation-list {
   justify-content: flex-end;
   flex-direction: row;
-  margin-top: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-right: 10px;
   right: 0;
 
@@ -42,7 +45,7 @@
 }
 .header .header-navigation .navigation-list li a {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
 }
 .navigation-list li a::after {
   content: "";
@@ -59,6 +62,20 @@
   animation: borderAnimated 800ms;
   transform-origin: right;
   width: 106%;
+}
+.header-navigation .instagram-icon {
+  position: absolute;
+  top: calc(50% - 10px);
+  right: 0;
+  font-size: 3.2rem;
+  align-self: center;
+}
+.header-navigation .facebook-icon {
+  position: absolute;
+  top: calc(50% - 10px);
+  right: 42px;
+  font-size: 3.2rem;
+  align-self: center;
 }
 @keyframes borderAnimated {
   0% {
@@ -115,8 +132,6 @@
 }
 .content-main .section-left:hover {
   overflow: hidden;
-  transform: scale(1.1);
-  transition: 1s ease-in;
 }
 
 .content-main .section-left h3 {
@@ -156,6 +171,7 @@
 
 .content-main .content-main__image {
   height: 100vh;
+  object-fit: cover;
 }
 .content-main__image div .button-mobile {
   display: none;
@@ -197,6 +213,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 .content-about-me .description .title {
   margin-bottom: 20px;

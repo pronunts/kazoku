@@ -32,7 +32,7 @@ body {
 
   width: calc(100% - 40px);
   z-index: 1000;
-  background-color: #121018cd;
+  background-color: rgba(28, 28, 29, 0.997);
 }
 .header img {
   top: -10px;
@@ -52,7 +52,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  color: mediumslateblue;
+  color: white;
   font-size: 1.9rem;
   font-weight: bold;
   border-radius: 0.3em;
@@ -81,14 +81,13 @@ body {
   background-color: mediumslateblue;
 }
 .header .header-navigation {
-  display: block;
-  position: absolute;
-  top: -20px;
-  right: 0;
+  display: flex;
+  align-items: center;
   width: 100vw;
   height: 100vh;
+  margin-left: 60px;
   animation: changeOpacity 1.5s ease-in-out;
-  background-color: rgb(21, 22, 34);
+  background-color: rgba(28, 28, 29, 0.997);
 }
 @keyframes changeOpacity {
   0% {
@@ -99,8 +98,6 @@ body {
   }
 }
 .navigation-list {
-  position: absolute;
-  right: 0;
   margin-top: 60px;
   display: flex;
   flex-direction: column;
@@ -114,6 +111,14 @@ body {
 
   font-size: 2.2rem;
   color: white;
+}
+.header-navigation .instagram-icon {
+  font-size: 2.8rem;
+  align-self: center;
+}
+.header-navigation .facebook-icon {
+  font-size: 2.8rem;
+  align-self: center;
 }
 
 .content-main {
@@ -135,7 +140,7 @@ body {
   float: right;
   height: 100vh;
   background-image: url("assets/IMG_20221121_163942\ Full.jpg.jpg");
-  background-position: calc(50% -120px);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -193,6 +198,9 @@ body {
 
   background-color: #ffffff;
   color: #131212;
+  background-image: url("assets/20475317.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .content-about-me .about-me-image {
@@ -200,6 +208,13 @@ body {
   height: 200px;
 
   object-fit: cover;
+}
+
+.content-about-me .imagen-denji {
+  border-radius: 2px;
+  width: 100%;
+  max-width: 320px;
+  z-index: 1;
 }
 .content-about-me .description .title {
   margin: 20px 10px auto;
@@ -218,7 +233,8 @@ body {
 .content-about-me .description .text-explain {
   font-size: 1.6rem;
   line-height: 1.6;
-  text-align: center;
+  font-weight: 700;
+  text-align: left;
   font-family: "Montserrat", Courier, monospace;
 }
 .slide-right {
