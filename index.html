@@ -32,9 +32,9 @@
       <nav class="header-navigation">
         <ul class="navigation-list">
           <li><a href="">Menu</a></li>
-          <li><a href="">Nosotros</a></li>
-          <li><a href="">Contacto</a></li>
-          <li><a href="">Ubicacion</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contact">Contacto</a></li>
+          <li><a href="#ubicacion">Ubicacion</a></li>
         </ul>
         <div class="social-medias">
           <a href="https://www.instagram.com/kazokucafe.ve/?hl=es">
@@ -85,7 +85,7 @@
         </div>
       </div>
     </main>
-    <section class="content-about-me">
+    <section id="nosotros" class="content-about-me">
       <img
         class="imagen-denji"
         src="./assets/Portrait.denji.webp"
@@ -105,6 +105,31 @@
         </p>
       </div>
     </section>
+    <section id="ubicacion" class="section-map">
+      <div>
+        <h1>Te esperamos!</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+          tempora sed commodi suscipit, numquam consequatur possimus porro
+          cupiditate tempore deleniti est eligendi inventore laborum nesciunt
+          culpa expedita quaerat excepturi accusantium.
+        </p>
+      </div>
+      <img
+        src="./assets/mazinger_z_by_wargreymonzero_de5no83-fullview.png"
+        alt=""
+      />
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15709.07962972777!2d-64.6988052!3d10.1587021!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x44a12b6bf275951c!2sKAZOKU%20C.A!5e0!3m2!1ses!2sve!4v1673411225820!5m2!1ses!2sve"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
     <script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
     <script
       type="module"
@@ -120,12 +145,13 @@
       setTimeout(() => {
         sectionLeft.classList.add("section-left-animated");
       }, 1000);
+      function display() {
+        menuCheck.checked = !true;
+      }
+      const menuCheck = document.querySelector("#menu-check");
+      const navList = document.querySelector(".navigation-list");
+      navList.addEventListener("click", display);
     </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var splide = new Splide(".splide");
-        splide.mount();
-      });
-    </script>
+    <script></script>
   </body>
 </html>
