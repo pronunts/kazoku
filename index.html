@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="./laptop.css" media="(min-width:800px)" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="node_modules/@splidejs/splide/dist/css/splide.min.css"
-    />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;500;600;700&family=Rammetto+One&display=swap"
@@ -31,7 +27,7 @@
       </label>
       <nav class="header-navigation">
         <ul class="navigation-list">
-          <li><a href="">Menu</a></li>
+          <li><a href="#Menu">Menu</a></li>
           <li><a href="#nosotros">Nosotros</a></li>
           <li><a href="#contact">Contacto</a></li>
           <li><a href="#ubicacion">Ubicacion</a></li>
@@ -85,6 +81,64 @@
         </div>
       </div>
     </main>
+    <section id="Menu" class="menu">
+      <div class="menu-options">
+        <input type="radio" name="cafe" id="Cafes" />
+        <label for="Cafes">Cafes</label>
+
+        <input type="radio" name="postres" id="Postres" />
+        <label for="Postres">Postres </label>
+
+        <input type="radio" name="tes" id="Tes" />
+        <label for="Tes">Te</label>
+      </div>
+
+      <div class="menu-layout">
+        <ul class="menu-coffee">
+          <li>
+            <img src="assets/IMG_20221121_170301.jpg" alt="" srcset="" />
+            <p>Frappucino</p>
+            <p>5$</p>
+          </li>
+          <li>
+            <img src="assets/IMG_20221121_170301.jpg" alt="" srcset="" />
+            <p>Frappucino</p>
+
+            <p>5$</p>
+          </li>
+          <li>
+            <img src="assets/IMG_20221121_170301.jpg" alt="" srcset="" />
+            <p>Frappucino</p>
+
+            <p>5$</p>
+          </li>
+          <li>
+            <img src="assets/IMG_20221121_170301.jpg" alt="" srcset="" />
+            <p>Frappucino</p>
+
+            <p>5$</p>
+          </li>
+        </ul>
+        <ul class="menu-postres">
+          <li>
+            <img src="assets/cake.webp" alt="" srcset="" />
+            <p>Cake</p>
+            <p>5$</p>
+          </li>
+          <li>
+            <img src="assets/cake.webp" alt="" srcset="" />
+            <p>Cake</p>
+            <p>5$</p>
+          </li>
+          <li>
+            <img src="assets/cake.webp" alt="" srcset="" />
+            <p>Cake</p>
+            <p>5$</p>
+          </li>
+        </ul>
+        <button>Boton</button>
+      </div>
+    </section>
     <section id="nosotros" class="content-about-me">
       <img
         class="imagen-denji"
@@ -115,10 +169,6 @@
           culpa expedita quaerat excepturi accusantium.
         </p>
       </div>
-      <img
-        src="./assets/mazinger_z_by_wargreymonzero_de5no83-fullview.png"
-        alt=""
-      />
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15709.07962972777!2d-64.6988052!3d10.1587021!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x44a12b6bf275951c!2sKAZOKU%20C.A!5e0!3m2!1ses!2sve!4v1673411225820!5m2!1ses!2sve"
         width="600"
@@ -130,7 +180,6 @@
       ></iframe>
     </section>
 
-    <script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -140,18 +189,6 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
 
-    <script>
-      const sectionLeft = document.querySelector(".content-main .section-left");
-      setTimeout(() => {
-        sectionLeft.classList.add("section-left-animated");
-      }, 1000);
-      function display() {
-        menuCheck.checked = !true;
-      }
-      const menuCheck = document.querySelector("#menu-check");
-      const navList = document.querySelector(".navigation-list");
-      navList.addEventListener("click", display);
-    </script>
-    <script></script>
+    <script src="./index.jsx"></script>
   </body>
 </html>

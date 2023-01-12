@@ -95,9 +95,7 @@ body {
   flex-direction: row;
   height: 100vh;
 }
-.content-main .section-left {
-  display: none;
-}
+
 .content-main .section-left img {
   position: absolute;
   width: 100%;
@@ -131,12 +129,9 @@ body {
     width: 60%;
   }
 }
-.content-main .section-left:hover {
-  overflow: hidden;
-}
 
 .content-main .section-left h3 {
-  font-size: 2.9rem;
+  font-size: 3.9rem;
   text-align: center;
   font-weight: 700;
   width: 250px;
@@ -146,8 +141,10 @@ body {
 }
 
 .content-main .section-left p {
-  font-size: 1.5rem;
-  width: 250px;
+  font-size: 2.2rem;
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
 
   font-family: "Hind Madurai", sans-serif;
   color: #dddddd;
@@ -209,7 +206,7 @@ body {
 .content-about-me .description {
   overflow: hidden;
   display: flex;
-  width: 50%;
+  width: 60%;
   height: 600px;
   flex-direction: column;
   justify-content: center;
@@ -223,7 +220,7 @@ body {
   width: 70%;
 }
 .content-about-me .description .text-explain {
-  width: 80%;
+  width: 75ch;
 }
 .section-map {
   flex-direction: row;
