@@ -94,6 +94,7 @@ body {
   overflow: hidden;
   flex-direction: row;
   height: 100vh;
+  margin-top: 120px;
 }
 
 .content-main .section-left img {
@@ -170,6 +171,9 @@ body {
 .content-main .content-main__image {
   height: 100vh;
   object-fit: cover;
+}
+.content-main__image div p {
+  font-size: 2.2rem;
 }
 .content-main__image div .button-mobile {
   display: none;

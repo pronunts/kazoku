@@ -193,6 +193,8 @@ body {
   margin: 0 auto;
   flex-direction: column-reverse;
   background-color: rgb(0, 0, 0);
+  margin-top: 90px;
+  height: 90vh;
 }
 .section-left {
   display: none;
@@ -205,8 +207,10 @@ body {
   flex-direction: column;
   width: 100%;
   float: right;
-  height: 94vh;
-  background-image: url("assets/IMG_20221121_163942\ Full.jpg.jpg");
+  height: 90vh;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url(assets/IMG_20221121_163942\ Full.jpg.jpg); */
+  background-image: url(./assets/IMG_20221121_163942\ Full.jpg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -226,12 +230,12 @@ body {
 }
 .content-main__image div h2 {
   font-size: 4.4rem;
-  height: 40px;
+  margin-bottom: 0;
 }
 .content-main__image div p {
   width: 70%;
   font-family: "", cursive;
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   font-weight: 600;
   opacity: 1;
   color: white;
@@ -292,6 +296,8 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 900px;
+
   gap: 30px;
 }
 .menu-coffee li,
